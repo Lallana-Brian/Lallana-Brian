@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cementerio - Proyecto Render</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#description">Proyecto</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+<!-- Sección de Portada -->
+<header class="hero">
+    <h1></h1>
+    <!-- <img src="img/cementerio2.jpeg" alt="Render del Cementerio" style="display: none;"> -->
+    <p id="changing-text">Un proyecto visual de serenidad y paz.</p>
+</header>
+
+<!-- Sección de Galería de Renders -->
+<section id="gallery" class="gallery">
+    <div class="gallery-header">
+        <h2>Galería de Renders</h2>
+    </div>
+    <div class="gallery-container">
+        <figure>
+            <img src="img/portada.jpg" alt="Render del Cementerio" onclick="openModal(this)">
+            <figcaption>Lorem ipsum dolor sit ar adipisnsa numquam hic necessitatibus unde.</figcaption>
+        </figure>
+        <figure>
+            <img src="img/portada.jpg" alt="Render del Cementerio" onclick="openModal(this)">
+            <figcaption>Lorem ipsum dolor sit amet cons elit. Aspernatur ab, hic itaque architecto dolores vitae dignissimos error  at! Tempore.</figcaption>
+        </figure>
+        <figure>
+            <img src="img/portada.jpg" alt="Render del Cementerio" onclick="openModal(this)">
+            <figcaption>Lorem ipsumng elit. Possimus qui nulla sit autem, dolor, repudiandae quod veniam veritatis sapientImpedit.</figcaption>
+        </figure>
+        <figure>
+            <img src="img/portada.jpg" alt="Render del Cementerio" onclick="openModal(this)">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe porro sint voluptatem numquam incidunt, eius ulle animius? Amet?</figcaption>
+        </figure>
+        <figure>
+            <img src="img/portada.jpg" alt="Render del Cementerio" onclick="openModal(this)">
+            <figcaption>Lorem ipsum dolor sit amettore maxime unde modi, suscipit quo rem fugit reiciendis istssimos? Quo quam maxime illum!</figcaption>
+        </figure>
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+</section>
+
+<!-- Modal para ver imagen en grande -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+    <!-- Sección de Descripción del Proyecto -->
+    <section id="description" class="description">
+        <h2>Descripción del Proyecto</h2>
+        <p>El cementerio está diseñado con los valores de tranquilidad, serenidad y respeto. Ofrecemos servicios como...
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, unde consequuntur impedit eaque asperiores natus quidem a omnis aut beatae vel magni laboriosam maxime adipisci, odit modi. Vel, rerum reprehenderit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo officia at exercitationem dolorum! Vero aliquid maiores consequatur assumenda distinctio aperiam, quia quidem iste necessitatibus consequuntur corporis. Aliquid fugiat quisquam temporibus.
+        </p>
+        <!-- Puedes agregar más información aquí -->
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="img/facebook.png" alt=""></a>
+        <a href="https://www.whatsapp.com" target="_blank" class="social-icon"><img src="img/whatsapp.png" alt=""></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="img/instagram.png" alt=""></a>
+        <!-- Añade más enlaces de redes sociales según sea necesario -->
+    </div>
+    <div class="advertisement">
+        <p></p>
+        <!-- Puedes incluir un bloque de publicidad o un espacio para anuncios aquí -->
+    </div>
+</footer>
+
+
+<script src="scripts/modal.js"></script>
+<script src="scripts/animations.js"></script>
+<script src="scripts/textCarousel.js"></script>
+<script src="scripts/scrollOnLoad.js"></script>
+<script src="scripts/scrolls.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- para videos... -->
+<!-- <section id="gallery" class="gallery">
+    <div class="gallery-header">
+        <h2>Galería de Renders</h2>
+    </div>
+    <div class="gallery-container">
+        <video src="videos/video1.mp4" alt="Render del Cementerio" onclick="openModal(this)" controls></video>
+        <video src="videos/video2.mp4" alt="Render del Cementerio" onclick="openModal(this)" controls></video>
+        <video src="videos/video3.mp4" alt="Render del Cementerio" onclick="openModal(this)" controls></video>
+        Agrega más videos según sea necesario -->
+    <!-- </div>
+</section> -->
